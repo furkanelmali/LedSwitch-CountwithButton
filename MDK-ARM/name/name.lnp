@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"name\startup_stm32f100xb.o"
+"name\liquidcrystal_i2c.o"
+"name\main.o"
+"name\stm32f1xx_it.o"
+"name\stm32f1xx_hal_msp.o"
+"name\stm32f1xx_hal_gpio_ex.o"
+"name\stm32f1xx_hal_i2c.o"
+"name\stm32f1xx_hal.o"
+"name\stm32f1xx_hal_rcc.o"
+"name\stm32f1xx_hal_rcc_ex.o"
+"name\stm32f1xx_hal_gpio.o"
+"name\stm32f1xx_hal_dma.o"
+"name\stm32f1xx_hal_cortex.o"
+"name\stm32f1xx_hal_pwr.o"
+"name\stm32f1xx_hal_flash.o"
+"name\stm32f1xx_hal_flash_ex.o"
+"name\stm32f1xx_hal_exti.o"
+"name\stm32f1xx_hal_tim.o"
+"name\stm32f1xx_hal_tim_ex.o"
+"name\system_stm32f1xx.o"
+--strict --scatter "name\name.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "name.map" -o name\name.axf
